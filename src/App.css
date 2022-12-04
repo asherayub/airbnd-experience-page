@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  height: 70px;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  color: #ff5a5f;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+nav img {
+  width: 82px;
+  height: 25.32px;
+  cursor: pointer;
+}
+.img-grid {
+  margin: 2em 1em 0;
+}
+.img-grid img {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+.experience {
+  margin: 2em 1em 0;
+}
+.cards {
+  display: flex;
+  overflow-x: scroll;
+}
+.cards::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  width: min-content;
+  margin: 1em;
+  font-size: 0.75rem;
+}
+.card-img {
+  height: 200px;
+}
+.rating p {
+  color: #918e9b;
+  display: flex;
+  align-items: baseline;
+}
+.rating p span {
+  padding-inline: 0.3em;
+}
+.rating #review {
+  font-weight: bold;
+  color: #000;
+}
+#title {
+  width: 100%;
+  font-weight: 100;
+  color: #323234;
+}
+.pricing {
+  color: #918e9b;
+}
+#price {
+  color: #000;
+  font-weight: bold;
+}
+
+@media (min-width: 550px) {
+  nav img {
+    width: 100px;
+    height: 35.32px;
+  }
+  .experience h1 {
+    font-size: 2rem;
+  }
+  .experience p {
+    font-size: 1.25rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+}
